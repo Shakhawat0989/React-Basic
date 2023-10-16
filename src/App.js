@@ -1,22 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import Hi from './components/Welcome';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Hello name='Mango' weight='20gm'/>
+        <Hello name='Orange' weight='30gm'/>
+        <Hello name='Banana' weight='40gm'/>
+        <Hello name='Apple' weight='50gm'/>
+        <Hi />
       </header>
     </div>
   );

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
 import Hi from './components/Welcome';
+import Click from './components/EventHandler';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hello name='Banana' weight='40gm'/>
         <Hello name='Apple' weight='50gm'/>
         <Hi />
+        <Click />
       </header>
     </div>
   );

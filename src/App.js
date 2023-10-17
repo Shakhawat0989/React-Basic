@@ -3,6 +3,7 @@ import './App.css';
 import Hello from './components/Hello';
 import Hi from './components/Welcome';
 import Click from './components/EventHandler';
+import Update from './components/ManipulateState';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hello name='Apple' weight='50gm'/>
         <Hi />
         <Click />
+        <Update />
       </header>
     </div>
   );

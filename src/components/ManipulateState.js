@@ -21,7 +21,7 @@ class famous extends Component{
                 {name: 'Orange',weight:'10gm'},
                 {name: 'Apple',weight:'40gm'},
             ]
-        })
+        }) 
     }
 
     render(){

@@ -4,6 +4,7 @@ import Hello from './components/Hello';
 import Hi from './components/Welcome';
 import Click from './components/EventHandler';
 import Update from './components/ManipulateState';
+import Fruit from './components/UseState';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hi />
         <Click />
         <Update />
+        <Fruit />
       </header>
     </div>
   );

@@ -3,8 +3,9 @@ import './App.css';
 import Hello from './components/Hello';
 import Hi from './components/Welcome';
 import Click from './components/EventHandler';
-import Update from './components/ManipulateState';
+import Update from './components/State';
 import Fruit from './components/UseState';
+import Check from './components/DataBinding';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Click />
         <Update />
         <Fruit />
+        <Check />
       </header>
     </div>
   );

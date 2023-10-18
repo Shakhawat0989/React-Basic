@@ -6,6 +6,7 @@ import Click from './components/EventHandler';
 import Update from './components/State';
 import Fruit from './components/UseState';
 import Check from './components/DataBinding';
+import MInput from './components/MultipleInput';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Update />
         <Fruit />
         <Check />
+        <MInput />
       </header>
     </div>
   );

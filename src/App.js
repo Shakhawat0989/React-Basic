@@ -7,6 +7,7 @@ import Update from './components/State';
 import Fruit from './components/UseState';
 import Check from './components/DataBinding';
 import MInput from './components/MultipleInput';
+import Area from './components/Textarea';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Fruit />
         <Check />
         <MInput />
+        <Area />
       </header>
     </div>
   );

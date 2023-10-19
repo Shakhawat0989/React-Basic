@@ -8,6 +8,7 @@ import Fruit from './components/UseState';
 import Check from './components/DataBinding';
 import MInput from './components/MultipleInput';
 import Area from './components/Textarea';
+import Age from './components/SelectOption';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Check />
         <MInput />
         <Area />
+        <Age />
       </header>
     </div>
   );

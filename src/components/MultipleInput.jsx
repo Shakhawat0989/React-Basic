@@ -37,7 +37,7 @@ class MultipleInput extends Component {
                     
                 </from>
 
-            </div>
+            </div> 
         )
     }
 }

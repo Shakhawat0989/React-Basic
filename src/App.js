@@ -1,36 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-import Hello from './components/Hello';
-import Hi from './components/Welcome';
-import Click from './components/EventHandler';
-import Update from './components/State';
-import Fruit from './components/UseState';
-import Check from './components/DataBinding';
-import MInput from './components/MultipleInput';
-import Area from './components/Textarea';
-import Age from './components/SelectOption';
-import List from './components/ArrayList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Hello name='Mango' weight='20gm'/>
-        <Hello name='Orange' weight='30gm'/>
-        <Hello name='Banana' weight='40gm'/>
-        <Hello name='Apple' weight='50gm'/>
-        <Hi />
-        <Click />
-        <Update />
-        <Fruit />
-        <Check />
-        <MInput />
-        <Area />
-        <Age />
-        <List />
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/RouterDom/Navber';
+import Home from './components/RouterDom/Home';
+import { BrowserRouter as Main, Routes, Route } from "react-router-dom";
+import Features from './components/RouterDom/Features';
+import Pricing from './components/RouterDom/Pricing';
+import Error from './components/RouterDom/Error';
+
+
+
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        
+          <Main>
+            <Navbar />
+            <Routes>
+              <Route exact path="/home" element={<Home />} />
+              <Route exact path="/features" element={<Features />} />
+              <Route exact path="/pricing" element={<Pricing />} />\
+              <Route  path="/*" element={<Error />} />
+            </Routes>
+            
+
+          </Main>
+        
+       
+      </>
+    );
+  }
 }
 
-export default App;

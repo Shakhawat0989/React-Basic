@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 export default class Blog extends Component {
@@ -34,6 +35,7 @@ export default class Blog extends Component {
             <div>
                 <h1 class="text-center">This is Blog Component</h1>
                 <div class="d-flex">
+                    <Link to="/writepost">Write_Post</Link>
                     <div class="flex-grow-1 ms-3 text-center">
                         {allpost}
                     </div>

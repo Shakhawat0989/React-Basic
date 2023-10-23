@@ -13,6 +13,7 @@ export default class Navber extends Component {
 
                 <Link to="/home">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to="/features">Features</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Link to="/blog">Blog</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to="/pricing">Pricing</Link>
 
             </div>

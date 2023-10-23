@@ -6,8 +6,10 @@ import Navbar from './components/RouterDom/Navber';
 import Home from './components/RouterDom/Home';
 import { BrowserRouter as Main, Routes, Route } from "react-router-dom";
 import Features from './components/RouterDom/Features';
+import Blog from './components/RouterDom/Blog';
 import Pricing from './components/RouterDom/Pricing';
 import Error from './components/RouterDom/Error';
+
 
 
 
@@ -21,7 +23,8 @@ export default class App extends Component {
             <Routes>
               <Route exact path="/home" element={<Home />} />
               <Route exact path="/features" element={<Features />} />
-              <Route exact path="/pricing" element={<Pricing />} />\
+              <Route exact path="/blog" element={<Blog />} />
+              <Route exact path="/pricing" element={<Pricing />} />
               <Route  path="/*" element={<Error />} />
             </Routes>
             
